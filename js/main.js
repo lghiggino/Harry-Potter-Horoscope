@@ -84,6 +84,13 @@ const checkButton = document.getElementById("submit");
 checkButton.addEventListener("click", checkHoroscope);
 
 function checkHoroscope(){
+  let house = ""
+  let houses = document.querySelectorAll(".house-radio")
+  houses.forEach(house => {
+      if (house.checked){
+        console.log(house.value);
+      }
+    })
   const date = document.getElementById("date").value;
   console.log(typeof date, date)
 }

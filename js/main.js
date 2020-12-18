@@ -79,3 +79,11 @@ Sagittarius.svg 	♐ 	Sagittarius 	November 22 – December 21 	Jupiter
 Capricorn.svg 	♑ 	Capricorn 	December 22 – January 19 	Saturn
 Aquarius.svg 	♒ 	Aquarius 	January 20 – February 18 	Uranus 	Saturn
 Pisces.svg 	♓ 	Pisces 	February 19 – March 20 	Neptune 	Jupiter */
+
+const checkButton = document.getElementById("submit");
+checkButton.addEventListener("click", checkHoroscope);
+
+function checkHoroscope(){
+  const date = document.getElementById("date").value;
+  console.log(typeof date, date)
+}

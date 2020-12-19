@@ -85,3 +85,14 @@ function checkHoroscope(){
 
     console.log(sign)
 }
+
+
+//check the radio button by clicking the parent li
+let lis = document.querySelectorAll("li")
+lis.forEach(li => {
+   li.addEventListener("click", (e) => {
+      console.log(e.target)
+      console.log(e.target.firstElementChild)
+      e.target.firstElementChild.checked = true;
+   })
+})

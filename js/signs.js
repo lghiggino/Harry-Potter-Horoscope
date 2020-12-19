@@ -57,18 +57,32 @@ let zodiac = [
   ]
 ];
 
-  let famousZodiacs = 
-    { 3: "Also born with this sign are: Zeca Tatu - Slytherin, Balu Banana - Hufflepuff",
-      4: "Also born with this sign are:",
-      5: "Also born with this sign are:",
-      6: "Also born with this sign are:",
-      7: "Also born with this sign are:",
-      8: "Also born with this sign are:",
-      9: "Also born with this sign are:",
-      10: "Also born with this sign are: Leonardo Ghiggino - Gryffindor",
-      11: "Also born with this sign are:",
-      0: "Also born with this sign are: Severus Snape - Slytherin",
-      1: "Also born with this sign are: Gileroy Lockhart, Lilly Potter, Arthur Weasly, Luna Lovegood",
-      2: "Also born with this sign are: Newt Scamander, ",
+  const famousZodiacs = 
+    { 3: "Also born with this sign are: James Potter , Fred and George Weasley",
+      4: "Also born with this sign are: Horace Slughorn, Victorie Weasley",
+      5: "Also born with this sign are: Pomona Sprout, Draco Malfoy",
+      6: "Also born with this sign are: Dobby, Neville Longbottom, Harry Potter",
+      7: "Also born with this sign are: Ginny Weasley, Celina Warbeck, Tina Goldstein, Percy Weasley",
+      8: "Also born with this sign are: Dolores Umbridge, Hermione Granger",
+      9: "Also born with this sign are: Garrick Ollivander, Quirinus Quirrell, Minerva McGonagall, Filius Flitwitck",
+      10: "Also born with this sign are: Molly Weasley, Sirius Black, Silvanus Kettleburn, Leonardo Ghiggino ;)",
+      11: "Also born with this sign are: Bill Weasley, RUbeus Hagrid, Charlie Weasley",
+      0: "Also born with this sign are: Tom Marvolo Riddle (yes, him), Severus Snape",
+      1: "Also born with this sign are: Gilderoy Lockhart, Lilly Potter, Arthur Weasly, Luna Lovegood",
+      2: "Also born with this sign are: Newt Scamander, Ron Weasley, Sybill Trelawney, Remus Lupin ",
     }
   
+/* 
+3 Aries
+4 Taurus
+5 Gemini
+6 Cancer
+7 Leo
+8 Virgo 
+9 Libra
+10 Scorpio
+11 Sagittarius
+0 Capricorn
+1 Aquarius
+2 Pisces
+*/

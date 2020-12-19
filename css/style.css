@@ -43,6 +43,24 @@ body {
   margin: 0 auto;
 }
 
+#result{
+  padding-top: 0;
+}
+
+p{
+  font-size: 2rem;
+  text-align: justify;
+  text-indent: 3rem;
+  font-family: cursive;
+  margin-bottom: 3%;
+  max-width: 100%;
+}
+
+p::first-letter{
+  font-weight: bold;
+  font-size: 3.0rem;
+}
+
 section > section{
   padding: 2% 4%;
 }
@@ -155,9 +173,14 @@ input[type="text"]{
   }
 }
 
-@media screen and (max-width: 505px){
+@media screen and (max-width: 520px){
   body, input {
   font-size: 1.5rem;
+  }
+
+  p{
+    font-size: 1.5rem;
+    max-width: 95%;
   }
 
   li{
@@ -173,9 +196,14 @@ input[type="text"]{
   }
 }
 
-@media screen and (max-width: 397px){
+@media screen and (max-width: 409px){
   body, input, li {
   font-size: 1.125rem;
+  }
+
+  p{
+    font-size: 1.25rem;
+    max-width: 100%;
   }
 
   #main{
@@ -183,5 +211,10 @@ input[type="text"]{
   }
 }
 
+@media screen and (max-width: 361px){
+  p{
+    font-size: 1.125rem;
+  }
+}
 
 

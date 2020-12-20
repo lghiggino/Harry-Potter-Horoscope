@@ -93,11 +93,11 @@ label{
   padding-top: 20%;
 }
 
-#houses-and-date {
+#houses-and-date, #newsflash {
   padding-top: 1%;
   margin-top: 0;
   border-top: 4px solid black;
-  max-width: 90%;
+  max-width: 85%;
   margin: 0 auto;
 }
 
@@ -137,6 +137,17 @@ section#today > p, aside #skeeter p{
 
 section#today > p::first-letter{
   font-size: 1.8rem;
+}
+
+#newsflash p,  #newsflash p::first-letter{
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 13rem;
+}
+
+#newsflash img{
+  float:right;
+  width: 50%;
 }
 
 /******************************************
@@ -200,26 +211,50 @@ input[type="text"]{
 /******************************************
 /* MEDIA QUERIES
 /*******************************************/
-@media screen and (max-width: 819px){
+@media screen and (max-width: 978px){
   li{
     width: 30%;
   }
+
+  #newsflash p,  #newsflash p::first-letter{
+    font-size: 8rem;
+  }
 }
 
-@media screen and (max-width: 607px){
+@media screen and (max-width: 804px){
+  .is-hidden-mobile{
+    display: none;
+  }
+
+  #newsflash p,  #newsflash p::first-letter{
+    font-size: 10rem;
+  }
+}
+
+@media screen and (max-width: 675px){
   li{
     width: 25%;
     font-size: 1.125rem;
   }
+
+  body, input {
+    font-size: 1.5rem;
+    }
+  
+    p{
+      font-size: 1.5rem;
+      max-width: 95%;
+    }
+
 }
 
-@media screen and (max-width: 520px){
+@media screen and (max-width: 563px){
   body, input {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   }
 
   p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     max-width: 95%;
   }
 
@@ -233,6 +268,13 @@ input[type="text"]{
 
   #main{
     min-height: 720px;
+  }
+}
+
+@media screen and (max-width: 516px){
+  aside > section{
+    width: 33.3%;
+    max-height: 90px;
   }
 }
 

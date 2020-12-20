@@ -100,8 +100,39 @@ label{
   margin: 0 0 0 0;
 }
 
-footer {
+aside{
+  max-width: 90%;
+  margin: 0 auto;
+  border: 1px solid red;
+  font-size: 1rem;
+}
 
+aside .fas{
+  display: inline;
+  font-size: 2rem;
+}
+
+aside > section{
+  width: 20%;
+  float: left;
+  border: 1px solid green;
+  padding: 0 1%;
+}
+
+aside table, aside h4{
+  margin: 5% 0 5% 0;
+  line-height: 200%;
+}
+
+
+section#today > p{
+  padding: 0;
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+section#today > p::first-letter{
+  font-size: 1.8rem;
 }
 
 /******************************************
@@ -132,6 +163,13 @@ li{
   border-radius: 4px;
 }
 
+li.no-fill{
+  display:block;
+  background-color: #e5e1d8;
+  width: 100%;
+  font-size: 1.25rem;
+  
+}
 
 li:hover, button:hover{
   background-color: #e3d08b;

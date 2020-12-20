@@ -84,6 +84,10 @@ function checkHoroscope(){
     famousWizards.innerText = `${famousZodiacs[sign]}`
 
     console.log(sign)
+
+    //remove the news section
+    const newsflash = document.querySelector("#newsflash")
+    newsflash.style.display = "none";
 }
 
 

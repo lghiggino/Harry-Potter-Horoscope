@@ -14,40 +14,10 @@
 	<body>
 
 		<section id="main">
-			<section id="houses-and-date">	
-				<section>
-					<label for="houses">Sort your house:</label>
-					<ul>
-						<li id="raven">
-							<input type="radio" class="house-radio float" name="house"  value="ravenclaw"> Ravenclaw</input>
-						</li>
-						<li id="huffle">
-							<input type="radio" class="house-radio float" name="house"  value="hufflepuff"> Hufflepuff</input>
-						</li>
-						<li id="slyth">
-							<input type="radio" class="house-radio float" name="house"  value="slytherin">Slytherin</input>
-						</li>
-						<li id="gryffin">
-							<input type="radio" class="house-radio float" name="house"  value="gryffindor"> Gryffindor</input>
-						</li>
-					</ul>
-					<label for="date">Date of birth in the Muggle calendar:</label>
-					<input type="date" id="date">
-					<button id="submit">Check my horoscope</button>
-				</section>
-			</section>
-	
-			<section id="result">
-				<section>
-					<p id="horoscope-result"></p>
-					<p id="famous-wizards"></p>
-				</section>
-			</section>
-
 			<aside id="daily-drops" class="clearfix">
 				<section>
 					<i class="fas fa-hand-point-right"></i>
-					<p>a list of kjnown death eaters will be delivered to all wizarding homes</p>
+					<p>a list of known death eaters will be delivered to all wizarding homes</p>
 				</section>
 				<section>
 					<table>
@@ -82,7 +52,7 @@
 					</ul>
 				</section>
 
-				<section>
+				<section id="skeeter">
 					<h4>Rita Skeeter's</h4>
 					<p>Severus Snape, Saint or Sinner?</p>
 					<p class="link">more on page 12</p>
@@ -95,6 +65,36 @@
 					<p>Issue: #39401</p>
 				</section>
 			</aside>
+
+			<section id="houses-and-date">	
+				<section>
+					<label for="houses">Sort your house:</label>
+					<ul>
+						<li id="raven">
+							<input type="radio" class="house-radio float" name="house"  value="ravenclaw"> Ravenclaw</input>
+						</li>
+						<li id="huffle">
+							<input type="radio" class="house-radio float" name="house"  value="hufflepuff"> Hufflepuff</input>
+						</li>
+						<li id="slyth">
+							<input type="radio" class="house-radio float" name="house"  value="slytherin">Slytherin</input>
+						</li>
+						<li id="gryffin">
+							<input type="radio" class="house-radio float" name="house"  value="gryffindor"> Gryffindor</input>
+						</li>
+					</ul>
+					<label for="date">Date of birth in the Muggle calendar:</label>
+					<input type="date" id="date">
+					<button id="submit">Check my horoscope</button>
+				</section>
+			</section>
+	
+			<section id="result">
+				<section>
+					<p id="horoscope-result"></p>
+					<p id="famous-wizards"></p>
+				</section>
+			</section>
 		</section>
 
 		

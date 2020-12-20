@@ -50,7 +50,7 @@ body {
 p{
   font-size: 2rem;
   text-align: justify;
-  text-indent: 3rem;
+  text-indent: 2rem;
   font-family: cursive;
   margin-bottom: 3%;
   max-width: 100%;
@@ -79,9 +79,6 @@ span{
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
-}
 
 #houses-and-date{
   text-align: center;
@@ -92,8 +89,16 @@ label{
   display: block;
 }
 
-#houses-and-date{
+#daily-drops{
   padding-top: 20%;
+}
+
+#houses-and-date {
+  padding-top: 1%;
+  margin-top: 0;
+  border-top: 4px solid black;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 #date{
@@ -103,7 +108,6 @@ label{
 aside{
   max-width: 90%;
   margin: 0 auto;
-  border: 1px solid red;
   font-size: 1rem;
 }
 
@@ -115,7 +119,6 @@ aside .fas{
 aside > section{
   width: 20%;
   float: left;
-  border: 1px solid green;
   padding: 0 1%;
 }
 
@@ -124,11 +127,12 @@ aside table, aside h4{
   line-height: 200%;
 }
 
-
-section#today > p{
+section#today > p, aside #skeeter p{
   padding: 0;
   margin: 0;
   font-size: 1.4rem;
+  text-indent: 1rem;
+  max-width: 80%;
 }
 
 section#today > p::first-letter{
@@ -179,8 +183,6 @@ input[type=radio]{
   display: inline-block;
   margin: 0 0.1% 0.5% 0;
 }
-
-
 
 input[type="text"]{
   border: none;

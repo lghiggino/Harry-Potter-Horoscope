@@ -1,7 +1,6 @@
 const checkButton = document.getElementById("submit");
 checkButton.addEventListener("click", checkHoroscope);
 
-
 function checkHoroscope(){
   let houseName = ""
   let houseNumber = 0
@@ -100,3 +99,35 @@ lis.forEach(li => {
       e.target.firstElementChild.checked = true;
    })
 })
+
+
+//Today date for the daily-drops
+function dailyDropDateRender(){
+   let today = new Date();
+   let dd = today.getDate();
+   let weekday = today.toLocaleString("default",{weekday:"long"});
+   let month = today.toLocaleString("default",{month:"long"});
+   let hour = today.getHours();
+   let edition = "";
+
+   //styling the text
+   if(dd<10) 
+   {
+      dd=`0${dd}`;
+   } 
+
+   if(hour <= 12){
+      edition = "morning edition";
+   } else edition = "evening edition"
+
+   //where e what to render
+   const todayDateName = document.querySelector("#todaydatename");
+   const todayDateNumber = document.querySelector("#todaydatenumber");
+   const todayDateEdition = document.querySelector("#todaydateedition");
+
+   todayDateName.innerText = weekday;
+   todayDateNumber.innerText = `${dd}, ${month}`;
+   todayDateEdition.innerText = edition;
+}
+
+dailyDropDateRender()

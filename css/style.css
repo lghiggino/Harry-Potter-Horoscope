@@ -127,7 +127,11 @@ aside table, aside h4{
   line-height: 200%;
 }
 
-section#today > p, aside #skeeter p{
+section#todaydate{
+  margin-top: 3%;
+}
+
+section#todaydate > p, aside #skeeter p{
   padding: 0;
   margin: 0;
   font-size: 1.4rem;
@@ -135,19 +139,24 @@ section#today > p, aside #skeeter p{
   max-width: 80%;
 }
 
-section#today > p::first-letter{
+section#todaydate > p::first-letter, section#todaydate > p{
   font-size: 1.8rem;
+  text-indent: 0;
 }
 
 #newsflash p,  #newsflash p::first-letter{
   font-family: sans-serif;
   text-transform: uppercase;
-  font-size: 13rem;
+  font-size: 10rem;
+  text-indent: 0;
+  font-weight: bold;
+  letter-spacing: 0.1em;
 }
 
 #newsflash img{
   float:right;
   width: 50%;
+  height: 250px;
 }
 
 /******************************************
@@ -225,9 +234,20 @@ input[type="text"]{
   .is-hidden-mobile{
     display: none;
   }
+  
+  aside > section{
+    width: 25%;
+    float: left;
+    padding: 0 1%;
+  }
 
   #newsflash p,  #newsflash p::first-letter{
-    font-size: 10rem;
+    font-size: 8rem;
+  }
+
+  #newsflash img{
+    width: 40%;
+    height: 220px;
   }
 }
 
@@ -246,57 +266,80 @@ input[type="text"]{
       max-width: 95%;
     }
 
+    #newsflash p,  #newsflash p::first-letter{
+      font-size: 6rem;
+    }
+
+    #newsflash img{
+      width: 40%;
+      height: 150px;
+    }
+
 }
 
-@media screen and (max-width: 563px){
-  body, input {
-  font-size: 1.3rem;
+@media screen and (max-width: 570px){
+  #daily-drops p, #daily-drops li, #daily-drops h4, #daily-drops #todaydate p{
+    font-size: 1rem;
   }
 
-  p{
-    font-size: 1.3rem;
-    max-width: 95%;
+  #daily-drops p::first-letter{
+    font-size: 1.5rem;
   }
 
   li{
     width: 40%;
-  }
-
-  input{
-    top:0;
-  }
-
-  #main{
-    min-height: 720px;
-  }
-}
-
-@media screen and (max-width: 516px){
-  aside > section{
-    width: 33.3%;
-    max-height: 90px;
-  }
-}
-
-@media screen and (max-width: 409px){
-  body, input, li {
-  font-size: 1.125rem;
-  }
-
-  p{
-    font-size: 1.25rem;
-    max-width: 100%;
-  }
-
-  #main{
-    min-height: 628px;
-  }
-}
-
-@media screen and (max-width: 361px){
-  p{
     font-size: 1.125rem;
   }
+
+  label{
+    font-size: 1rem;
+  }
+
+  #result{
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  #result p{
+    font-size: 1.2rem;
+  }
+
+  #newsflash p,  #newsflash p::first-letter{
+    font-size: 5rem;
+  }
+
+  #newsflash img{
+    width: 40%;
+    height: 150px;
+  }
 }
 
+@media screen and (max-width: 480px){
+  #result{
+    position: relative;
+    top: -30px;
+  }
+  
+  #result p{
+    font-size: 1rem;
+  }
 
+  #newsflash p,  #newsflash p::first-letter{
+    font-size: 3rem;
+  }
+  #newsflash img{
+    width: 35%;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 390px){
+  input[type=date], button#submit{
+    font-size: 0.9rem;
+    width: 45%;
+  }
+
+  #result p{
+    font-size: 0.9rem;
+  }
+}

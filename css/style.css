@@ -317,7 +317,7 @@ input[type="text"]{
 @media screen and (max-width: 480px){
   #result{
     position: relative;
-    top: -30px;
+    top: -25px;
   }
   
   #result p{

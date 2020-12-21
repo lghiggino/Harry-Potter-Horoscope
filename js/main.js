@@ -117,8 +117,8 @@ function dailyDropDateRender(){
    } 
 
    if(hour <= 12){
-      edition = "morning edition";
-   } else edition = "evening edition"
+      edition = "Morning edition";
+   } else edition = "Evening edition"
 
    //where e what to render
    const todayDateName = document.querySelector("#todaydatename");

@@ -23,8 +23,8 @@ function checkHoroscope(){
             houseNumber = 2;
             break;
           case (houseName === "gryffindor"):
-          houseNumber = 3;
-          break;
+            houseNumber = 3;
+            break;
         }
       }
     })

@@ -1,9 +1,6 @@
 const checkButton = document.querySelector("#submit")
 checkButton.addEventListener("click", checkHoroscope);
 
-let houseNumber;
-let sign;
-
 //check the radio button by clicking the parent li
 let lis = document.querySelectorAll("li")
 lis.forEach(li => {
@@ -14,32 +11,33 @@ lis.forEach(li => {
 
 function checkHoroscope(){    
       //get the house value
-      getHouse()
+      let houseNumber = getHouse()
       //get the date and determine the horoscope answer
-      determineSign()
+      let signNumber = determineSign()
       //display the information on the DOM
-      renderDOM()
+      renderDOM(houseNumber, signNumber)
 }
 
+
 function getHouse(){
-    let houses = document.querySelectorAll(".house-radio")
-    let houseName = ""
-    houses.forEach(house => {
-        if (house.checked){
-            houseName = house.value    
-            switch (houseName){
-                case ("ravenclaw"):
-                  return houseNumber = 0;
-                case ("hufflepuff"):
-                  return houseNumber = 1;
-                case ("slytherin"):
-                  return houseNumber = 2;
-                case ("gryffindor"):
-                  return houseNumber = 3;
-            }
+      let houses = document.querySelectorAll(".house-radio");
+      let houseName;
+      houses.forEach(house => {
+          if (house.checked){
+                houseName = house.value;
+          }
+      })
+      switch (houseName){
+            case ("ravenclaw"):
+              return 0;
+            case ("hufflepuff"):
+              return 1;
+            case ("slytherin"):
+              return 2;
+            case ("gryffindor"):
+              return 3;
         }
-    })
-}
+  }
 
 function determineSign(){
     //get the date
@@ -88,19 +86,20 @@ function determineSign(){
     }
 }
 
-function renderDOM(){
-    const horoscopeResult = document.querySelector("#horoscope-result");
-    horoscopeResult.innerText = "";
-    horoscopeResult.innerText = `${zodiac[houseNumber][sign]}`;
-
-    const famousWizards = document.querySelector("#famous-wizards");
-    famousWizards.innerText = "";
-    famousWizards.innerText = `${famousZodiacs[sign]}`
-
-    //remove the news section
-    const newsflash = document.querySelector("#newsflash")
-    newsflash.style.display = "none";
-}
+function renderDOM(houseNumber, sign){
+      const horoscopeResult = document.querySelector("#horoscope-result");
+      horoscopeResult.innerText = "";
+      horoscopeResult.innerText = `${zodiac[houseNumber][sign]}`;
+  
+      const famousWizards = document.querySelector("#famous-wizards");
+      famousWizards.innerText = "";
+      famousWizards.innerText = `${famousZodiacs[sign]}`
+  
+      //remove the news section
+      const newsflash = document.querySelector("#newsflash")
+      newsflash.style.display = "none";
+  }
+  
 
 //Builiding the header Date - unrelated to the horoscope
 //Today date for the daily-drops

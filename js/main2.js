@@ -8,19 +8,17 @@ let sign;
 let lis = document.querySelectorAll("li")
 lis.forEach(li => {
    li.addEventListener("click", (e) => {
-      console.log(e.target)
-      console.log(e.target.firstElementChild)
       e.target.firstElementChild.checked = true;
    })
 })
 
-function checkHoroscope(){
-    //get the house value
-    getHouse()
-    //get the date and determine the horoscope answer
-    determineSign()
-    //display the information on the DOM
-    renderDOM()
+function checkHoroscope(){    
+      //get the house value
+      getHouse()
+      //get the date and determine the horoscope answer
+      determineSign()
+      //display the information on the DOM
+      renderDOM()
 }
 
 function getHouse(){
@@ -29,20 +27,16 @@ function getHouse(){
     houses.forEach(house => {
         if (house.checked){
             houseName = house.value    
-            switch (true){
-                case (houseName === "ravenclaw"):
-                    houseNumber = 0;
-                    return houseNumber;
-                case (houseName === "hufflepuff"):
-                    houseNumber = 1;
-                    return houseNumber;
-                case (houseName === "slytherin"):
-                    houseNumber = 2;
-                    return houseNumber;
-                case (houseName === "gryffindor"):
-                    houseNumber = 3
-                    return houseNumber;
-              }
+            switch (houseName){
+                case ("ravenclaw"):
+                  return houseNumber = 0;
+                case ("hufflepuff"):
+                  return houseNumber = 1;
+                case ("slytherin"):
+                  return houseNumber = 2;
+                case ("gryffindor"):
+                  return houseNumber = 3;
+            }
         }
     })
 }
@@ -56,34 +50,34 @@ function determineSign(){
     //test and determine the sign
     switch(month){
       case 2:
-             day < 20 ? (sign = 1) : (sign = 2);
+            day < 20 ? (sign = 1) : (sign = 2);
             return sign;
       case 3:
             day < 21 ? (sign = 2) : (sign = 3);
             return sign;
       case 4:
-             day < 21 ? (sign = 3) : (sign = 4);
+            day < 21 ? (sign = 3) : (sign = 4);
             return sign;
       case 5:
             day < 21 ? (sign = 4) : (sign = 5);
             return sign;
       case 6:
             day < 21 ? (sign = 5) : (sign = 6);
-             return sign;
+            return sign;
       case 7:
-             day < 23 ? (sign = 6) : (sign = 7);
+            day < 23 ? (sign = 6) : (sign = 7);
             return sign;
       case 8:
-             day < 23 ? (sign = 7) : (sign = 8);
+            day < 23 ? (sign = 7) : (sign = 8);
             return sign;
       case 9:
             day < 23 ? (sign = 8) : (sign = 9);
             return sign;
       case 10:
-             day < 23 ? (sign = 9) : (sign = 10);
+            day < 23 ? (sign = 9) : (sign = 10);
             return sign;
       case 11:
-             day < 23 ? (sign = 10) : (sign = 11);
+            day < 23 ? (sign = 10) : (sign = 11);
             return sign;
       case 12:
             day < 22 ? (sign = 11) : (sign = 0);

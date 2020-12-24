@@ -36,6 +36,8 @@ function getHouse(){
               return 2;
             case ("gryffindor"):
               return 3;
+            default:
+                  alert("you must pick a house")
         }
   }
 
@@ -83,6 +85,8 @@ function determineSign(){
       case 1:
             day < 20 ? (sign = 0) : (sign = 1);
             return sign;
+      default:
+            alert("you must pick a date")
     }
 }
 
@@ -90,11 +94,11 @@ function renderDOM(houseNumber, sign){
       const horoscopeResult = document.querySelector("#horoscope-result");
       horoscopeResult.innerText = "";
       horoscopeResult.innerText = `${zodiac[houseNumber][sign]}`;
-  
+
       const famousWizards = document.querySelector("#famous-wizards");
       famousWizards.innerText = "";
       famousWizards.innerText = `${famousZodiacs[sign]}`
-  
+
       //remove the news section
       const newsflash = document.querySelector("#newsflash")
       newsflash.style.display = "none";

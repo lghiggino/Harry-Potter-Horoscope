@@ -255,6 +255,8 @@ input[type="text"]{
   }
 }
 
+
+
 @media screen and (max-width: 675px){
   li{
     width: 25%;
@@ -281,7 +283,15 @@ input[type="text"]{
 
 }
 
-@media screen and (max-width: 570px){
+@media screen and (max-width: 600px){
+  #main{
+    max-width: 998px;
+    min-height: 1492px;
+    background: url("../assets/background-extended.png") no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+  }
+
   #daily-drops p, #daily-drops li, #daily-drops h4, #daily-drops #todaydate p{
     font-size: 1rem;
   }
@@ -305,7 +315,7 @@ input[type="text"]{
   }
 
   #result p{
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   #newsflash p,  #newsflash p::first-letter{
@@ -323,10 +333,6 @@ input[type="text"]{
     position: relative;
     top: -25px;
   }
-  
-  #result p{
-    font-size: 1rem;
-  }
 
   #newsflash p,  #newsflash p::first-letter{
     font-size: 3rem;
@@ -339,11 +345,8 @@ input[type="text"]{
 
 @media screen and (max-width: 390px){
   input[type=date], button#submit{
-    font-size: 0.9rem;
+    font-size: 1rem;
     width: 45%;
   }
 
-  #result p{
-    font-size: 0.9rem;
-  }
 }

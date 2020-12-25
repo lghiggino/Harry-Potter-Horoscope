@@ -131,6 +131,10 @@ section#todaydate{
   margin-top: 3%;
 }
 
+section#todaydate #todaydatename{
+  text-transform: capitalize;
+}
+
 section#todaydate > p, aside #skeeter p{
   padding: 0;
   margin: 0;

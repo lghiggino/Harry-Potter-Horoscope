@@ -110,7 +110,7 @@ function renderDOM(houseNumber, sign){
 function dailyDropDateRender(){
     let today = new Date();
     let dd = today.getDate();
-    let weekday = today.toLocaleString("default",{weekday:"long"});
+    let weekday = today.toLocaleString("default", {weekday:"long"});
     let month = today.toLocaleString("default",{month:"long"});
     let hour = today.getHours();
     let edition = "";

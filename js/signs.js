@@ -58,7 +58,8 @@ let zodiac = [
 ];
 
   const famousZodiacs = 
-    { 3: "Also born with this sign are: James Potter , Fred and George Weasley",
+    { 
+      3: "Also born with this sign are: James Potter , Fred and George Weasley",
       4: "Also born with this sign are: Horace Slughorn, Victorie Weasley",
       5: "Also born with this sign are: Pomona Sprout, Draco Malfoy",
       6: "Also born with this sign are: Dobby, Neville Longbottom, Harry Potter",
